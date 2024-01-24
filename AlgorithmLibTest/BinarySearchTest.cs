@@ -69,5 +69,14 @@ public class BinarySearchTest
         Assert.That(index, Is.EqualTo(-1));
         Assert.Pass();
     }
+
+    public void Test7()
+    {
+        IComparable[] array = { 1, 2, 3, 4, 5, 6 };
+        var data = new List<IComparable>(array);
+        var index = BinarySearch.Search(data, 0);
+        Assert.That(index, Is.EqualTo(-1));
+        Assert.Pass();   
+    }
     
 }
